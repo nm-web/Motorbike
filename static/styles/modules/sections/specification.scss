@@ -1,0 +1,110 @@
+.specifications {
+  background: url("/static/images/content/bg-section1.png") center center no-repeat,#0d0d0d;
+  background-size: 98% 100%;
+
+  //height: 100vh;
+ & h2 {
+   text-transform: capitalize;
+   font-size: 3.25rem;
+   font-weight: bold;
+   line-height: 1.2;
+
+
+ }
+}
+
+.specifications-wrapper {
+  padding: 10.75rem 5px 0;
+  max-width: 1330px;
+  margin-left: 10%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+
+.specifications__img {
+  max-width: 45%;
+  flex-grow: 1;
+  background: url("/static/images/content/text-section1.png") top left no-repeat;
+  background-size: contain;
+  & img {
+    margin-top: 4rem;
+  }
+}
+
+.specifications__text {
+  max-width: 55%;
+  flex-grow: 0;
+  font-size: 1.31rem;
+  & p {
+    margin-top: 1.9em;
+
+    font-weight: 300;
+  }
+  & .more {
+    cursor: pointer;
+    text-transform: uppercase;
+    color:$orange;
+    text-decoration: underline;
+    font-size: 0.68rem;
+  }
+}
+
+.specifications__progressbar {
+  padding-bottom: 5.6rem;
+  margin:5.53rem auto 0;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1em;
+
+
+  & .progressbar {
+    //border-radius: 50%;
+    position: relative;
+    width: 174px;
+    height: 174px;
+
+
+  }
+
+  & .progressbar-text{
+    text-align: center;
+    color:$white!important;
+    font-size: 3rem;
+    font-weight: 300;
+   line-height: 0.8;
+
+    & span {
+      display: block;
+      color:$orange;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+    }
+  }
+
+
+}
+
+#progressbar2{
+  transform: rotate(-175deg);
+  & .progressbar-text{
+      transform: translate(-50%,-50%) rotate(175deg)!important;
+  }
+}
+
+#progressbar3{
+  transform: rotate(55deg);
+  & .progressbar-text{
+    transform: translate(-50%,-50%) rotate(-55deg)!important;
+    & span {
+      text-transform: lowercase;
+    }
+    & small {
+      font-size: 2rem;
+    }
+  }
+}

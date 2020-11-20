@@ -1,0 +1,29 @@
+@mixin circle-plus ($top,$left){
+  position: absolute;
+  top: $top;
+  left: $left;
+
+
+}
+
+@mixin line($top,$left,$width,$color1,$color2){
+  top:$top;
+  left:$left;
+  //max-width: $width;
+  width: $width;
+  background:linear-gradient(to right,$color1 70%, $color2 30%);
+  //&:before {
+  //  position: absolute;
+  //  content: '';
+  //  height: 2px;
+  //
+  //}
+  //&:after {
+  //  position: absolute;
+  //  content: '';
+  //  height: 2px;
+  //
+  //
+  //}
+
+}
